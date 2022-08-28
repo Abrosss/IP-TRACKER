@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+   <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>IP SEARCH</title>
+
+
+</head>
+<body>
+<section class="page">
+  <header>
+  <h1>IP Address Tracker</h1>
+  <form id="form">
+    <input type="text" name="ip" placeholder="Search for any IP address or domain">
+    <button><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+  </form>
+  <section id="results">
+    <div>
+      <h4>IP ADDRESS</h4>
+      <span id="IP"></span>
+    </div>
+    <div>
+      <h4>LOCATION</h4>
+      <span id="address"></span>
+    </div>
+    <div>
+      <h4>TIMEZONE</h4>
+      <span id="timezone"></span>
+    </div>
+    <div>
+      <h4>ISP</h4>
+      <span id="isp"></span>
+    </div>
+  </section>
+</header>
+<main>
+  <div id="map"></div>
+</main>
+</section>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
