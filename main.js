@@ -59,7 +59,7 @@ async function getData(ip) {
 
 async function geocode(location) {
   const response = await fetch(
-    `http://www.mapquestapi.com/geocoding/v1/address?key=gNns5llR2Uz7bs6GGUCA2jDGSFrCgxck&location=${location}`,
+    `https://www.mapquestapi.com/geocoding/v1/address?key=gNns5llR2Uz7bs6GGUCA2jDGSFrCgxck&location=${location}`,
     {
       method: 'GET'
     
